@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 pytest = "*"
+psycopg2-binary = "*"
+alembic = "*"
 
 [dev-packages]
 
