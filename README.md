@@ -9,7 +9,9 @@ postgresqlをDBとして利用し、pytest実行時に既存のデータに影�
 
 
 ## TODO
-- [ ] postgresql 環境セットアップ
+- [x] docker環境構築
+- [x] postgresql 環境セットアップ
+- [ ] python, postgresql 間での疎通確認
 - [ ] 簡単なCRUD処理追加
 - [ ] pytest追加
 - [ ] 既存のデータに影響がないテスト環境の検討、作成
