@@ -12,7 +12,7 @@ postgresqlをDBとして利用し、pytest実行時に既存のデータに影�
 - [x] docker環境構築
 - [x] postgresql 環境セットアップ
 - [x] python, postgresql 間での疎通確認
-- [ ] alembic セットアップ(テーブル追加)
+- [x] alembic セットアップ(テーブル追加)
 - [ ] 簡単なCRUD処理追加
 - [ ] pytest追加
 - [ ] 既存のデータに影響がないテスト環境の検討、作成
