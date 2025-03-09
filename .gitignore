@@ -1,1 +1,2 @@
 .pytest-postgres-venv
+__pycache__/
