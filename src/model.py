@@ -15,8 +15,27 @@ class Users(Base):
     @classmethod
     def create(cls, *args, **kwargs):
         user = Users(**kwargs)
-        session = create_session()
         with create_session() as session:
             session.add(user)
             session.commit()
         return user
+
+    @classmethod
+    def update(cls, user_id, name):
+        with create_session() as session:
+            user = session.query(Users).get(user_id)
+            user.name = name
+            session.commit()
+
+    @classmethod
+    def list(cls):
+        with create_session() as session:
+            users = session.query(Users).all()
+            return users
+
+    @classmethod
+    def delete(cls, user_id):
+        with create_session() as session:
+            user = session.query(Users).get(user_id)
+            session.delete(user)
+            session.commit()
